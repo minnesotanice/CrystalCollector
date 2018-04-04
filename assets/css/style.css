@@ -1,0 +1,70 @@
+html,
+body {
+    /* background-image: url("../images/chalkboard-black.jpg");
+    background-size: cover;
+    background-color: black; */
+    box-sizing: border-box;
+    color: black;
+    font-family: 'Chicle', cursive;
+    font-size: 20px;
+    line-height: 1.4em;
+    
+
+}
+
+h1 {
+    color: rgb(176, 11, 241);
+    font-size: 3em;
+    margin: .5em;
+    text-align: center;
+    text-shadow: 2px 2px 2px rgba(150, 150, 150, 1);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+
+/* CLEAR FIX */
+/* ::  more widely adopted for pseudo elements because it provides support for IE8 */
+.clear-fix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header, section, footer {
+    margin: 0 auto;
+    width: 960px;
+}
+
+.tarot img {
+    margin: 0 auto;
+    max-height: 300px;
+}
+
+.numberSection {
+    background-color: black;
+    border-right: 1em white solid;
+    color: white;
+    margin: 2em 0;
+    padding: 1em;
+}
+
+
+
+
+
+footer {
+    margin-top: 2em;
+    text-align: center;
+}
+
+
+
+
+
+.copyright {
+    font-size: .5em;
+}

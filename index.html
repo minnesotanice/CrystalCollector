@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- BOOTSTRAP 4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- GOOGLE FONT -->
+    <link href="https://fonts.googleapis.com/css?family=Chicle" rel="stylesheet">
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+
+
+    <title>Crystal Collector</title>
+</head>
+
+<body>
+
+
+
+
+
+    <header class="container">
+        <div class="row">
+            <div class="col-12">
+
+                <h1>
+                    Crystal Collector
+                </h1>
+
+            </div>
+        </div>
+    </header>
+
+
+    <!-- BEGIN DIRECTIONS -->
+    <section class="container">
+
+        <div class="row">
+
+            <div class="col-6">
+
+                <p>
+                    At the begining of the game you will be given a random number between 19 and 120.
+                </p>
+
+                <p>
+                    There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your total score. The value
+                    of each crystal is between 1 and 12 and is hidden from you until you click on it.
+                </p>
+
+                <p>
+                    You win the game by matching your total score to the random number.
+                </p>
+
+                <p>
+                    Each time when the game starts, the game will change the values of each crystal.
+                </p>
+
+            </div>
+            <div class="col-6 tarot">
+                <img src="assets/images/tarot.jpg">
+            </div>
+
+        </div>
+    </section>
+    <!-- END DIRECTIONS -->
+
+
+
+    <!-- BEGIN NUMBER TALLIES -->
+    <section class="container">
+
+        <div class="row">
+
+
+
+
+            <div class="col-4 numberSection">
+
+                <p>
+                    Random number:
+                </p>
+                <h2 id="targetNumber">
+                    
+                </h2>
+
+            </div>
+
+            <div class="col-4 numberSection">
+
+                <p>
+                    Your total score:
+                </p>
+                <h2 id="yourScore">
+                    0
+                </h2>
+
+            </div>
+
+            <div class="col-4 numberSection">
+
+                <p>
+                    Wins:
+                    <span id="win">
+                        0
+                    </span>
+                </p>
+                <p>
+                    Losses:
+                    <span id="loss">
+                        0
+                    </span>
+                </p>
+
+            </div>
+
+
+    </section>
+    <!-- END NUMBER TALLIES -->
+
+
+
+    <!-- BEGIN CRYSTAL BUTTONS -->
+    <section class="container">
+
+        <div id="crystals" class="row">
+
+            <div class="col-3">
+
+                <img id="blue" class="crystal-image" src="assets/images/blue_crystal.jpg">
+
+            </div>
+
+            <div class="col-3">
+
+                <img id="purple" class="crystal-image" src="assets/images/purple_crystal.jpg" data-crystalvalue="2">
+
+            </div>
+
+            <div class="col-3">
+
+                <img id="red" class="crystal-image" src="assets/images/red_crystal.jpg" data-crystalvalue="5">
+
+            </div>
+
+            <div class="col-3">
+
+                <img id="teal" class="crystal-image" src="assets/images/teal_crystal.jpg" data-crystalvalue="10">
+
+            </div>
+
+
+
+    </section>
+    <!-- END CRYSTALS BUTTONS -->
+
+
+
+    <footer class="container">
+        <div class="row">
+            <div class="col-12">
+                Copyright &copy;
+                <script type="text/javascript">
+                    document.write(new Date().getFullYear());
+                </script>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+    <!-- JQUERY  -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- JAVASCRIPT -->
+    <script src="assets/javascript/game.js" type="text/javascript"></script>
+</body>
+
+</html>
