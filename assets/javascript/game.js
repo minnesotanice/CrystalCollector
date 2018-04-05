@@ -1,16 +1,3 @@
-// RULES
-
-// At the begining of the game you will be given a random number between 19 and 120.
-
-// There are 4 crystals below. By clicking on a crystal you will add a specific amount of points to your total score. The value of each crystal is between 1 and 12 and is hidden from you until you click on it.
-
-// You win the game by matching your total score to the random number.
-
-// Each time when the game starts, the game will change the values of each crystal.
-
-// ///////////////////////////////////////////////////////////
-
-
 // random number between 19 and 120
 var targetNumber;
 
@@ -24,10 +11,7 @@ var updateYourScore = function () {
     document.getElementById("yourScore").innerHTML = counter;
 }
 
-
-
 var counter = 0;
-
 
 var win = 0;
 
@@ -54,8 +38,6 @@ var createCrystalRandom = function () {
 
 
 // BLUE CRYSTAL VALUE
-// run createCrystalRandom()
-// assign result to data-crystalvalue="?" of crystal
 var makeBlueValue = function () {
     createCrystalRandom();
     $("#blue").attr("data-crystalvalue", crystalRandom);
@@ -140,7 +122,5 @@ crystals.on("click", ".crystal-image", function () {
         updateLoss();
         startNextRound();
     }
-
-
 
 });
