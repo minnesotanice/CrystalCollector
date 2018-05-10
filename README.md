@@ -4,7 +4,7 @@
 
 ## Overview
 
-Crystal Collector is an single page API based game that uses JavaScript and jQuery for functionality.
+Crystal Collector is a game that uses JavaScript and jQuery for functionality.
 
 ## How to play
 
