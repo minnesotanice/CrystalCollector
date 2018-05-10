@@ -1,5 +1,7 @@
 # Crystal Collector
 
+[Play Crystal Collector!](https://minnesotanice.github.io/CrystalCollector/)
+
 ## Overview
 
 Crystal Collector is an single page API based game that uses JavaScript and jQuery for functionality.
